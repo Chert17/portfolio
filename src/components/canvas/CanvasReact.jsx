@@ -1,20 +1,25 @@
-import { useMemo, useRef } from "react";
+import { Suspense, useMemo, useRef } from "react";
 
-import { Float, Line, OrbitControls, Sphere } from "@react-three/drei";
+import { Float, Line, OrbitControls, Preload, Sphere } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import * as THREE from "three";
 
-export default function App() {
+import CanvasLoader from "./CanvasLoader";
+
+export default function CanvasReact() {
   return (
-    <Canvas camera={{ position: [0, 0, 10] }}>
-      <OrbitControls enableZoom={false} autoRotate={false} />
-      <Float speed={3} rotationIntensity={1} floatIntensity={2}>
-        <Atom />
-      </Float>
-      <EffectComposer>
-        <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
-      </EffectComposer>
+    <Canvas camera={{ position: [0, 0, 5.5] }}>
+      <Suspense fallback={<CanvasLoader />}>
+        <Float speed={3} rotationIntensity={1} floatIntensity={2}>
+          <OrbitControls enableZoom={false} autoRotate={false} />
+          <Atom />
+        </Float>
+        <EffectComposer>
+          <Bloom luminanceThreshold={1} />
+        </EffectComposer>
+      </Suspense>
+      <Preload all />
     </Canvas>
   );
 }

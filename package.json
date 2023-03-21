@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Chert17.github.io/portfolio",
+  "homepage": "https://Chert17.github.io/test",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +16,8 @@
     "@types/three": "^0.149.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.3.5",
+    "react-scroll": "^1.8.9",
     "three": "^0.150.1"
   },
   "devDependencies": {

@@ -1,6 +1,18 @@
 import close from "./close.svg";
+//
+import gmail from "./contacts/gmail-logo.svg";
+import linkedin from "./contacts/linkedin_icon.svg";
+import telegram from "./contacts/telegram_icon.svg";
+//
 import logo from "./logo.svg";
 import menu from "./menu.svg";
+//
+import cinema from "./projects/cinema-rn.png";
+import coctails from "./projects/coctails.png";
+import finance from "./projects/finance.png";
+import gymExercise from "./projects/gym-exercise.png";
+import metaversus from "./projects/mateversus.png";
+import pinterest from "./projects/pinterest-rn.png";
 //
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,6 +32,9 @@ export {
   logo,
   close,
   menu,
+  gmail,
+  telegram,
+  linkedin,
   css,
   figma,
   git,
@@ -29,4 +44,10 @@ export {
   redux,
   tailwind,
   typescript,
+  coctails,
+  finance,
+  metaversus,
+  gymExercise,
+  cinema,
+  pinterest,
 };
