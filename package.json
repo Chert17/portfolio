@@ -1,9 +1,9 @@
 {
-  "name": "test",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Chert17.github.io/test",
+  "homepage": "https://Chert17.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
