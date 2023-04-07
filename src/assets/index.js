@@ -7,6 +7,7 @@ import telegram from "./contacts/telegram_icon.svg";
 import logo from "./logo.svg";
 import menu from "./menu.svg";
 //
+import nike from "./projects/Nike.png";
 import cinema from "./projects/cinema-rn.png";
 import coctails from "./projects/coctails.png";
 import finance from "./projects/finance.png";
@@ -50,4 +51,5 @@ export {
   gymExercise,
   cinema,
   pinterest,
+  nike,
 };
